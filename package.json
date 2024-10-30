@@ -1,0 +1,31 @@
+{
+  "name": "appsail-nodejs",
+  "version": "0.0.1",
+  "description": "Sample AppSail application with NodeJS and express framework.",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catalystbyzoho/appsail-nodejs.git"
+  },
+  "keywords": [
+    "AppSail"
+  ],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/catalystbyzoho/appsail-nodejs/issues"
+  },
+  "homepage": "https://github.com/catalystbyzoho/appsail-nodejs#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.3",
+    "nodemon": "^3.1.7"
+  },
+  "license": "ISC"
+}
