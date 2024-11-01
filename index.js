@@ -12,11 +12,18 @@ const corsOptions ={
   optionSuccessStatus:200,
 }
 
+const catalystSDK = require("zcatalyst-sdk-node");
+app.use((req, res, next) => {
+  const catalyst = catalystSDK.initialize(req);
+  res.locals.catalyst = catalyst;
+  next();
+});
+
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 app.use(cors(corsOptions))
 
-   
+     
 
 
 app.get('/', (req, res) => {
